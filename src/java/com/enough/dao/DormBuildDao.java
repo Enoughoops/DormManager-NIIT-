@@ -26,6 +26,7 @@ public class DormBuildDao {
 		ResultSet rs = pstmt.executeQuery();
 		while(rs.next()) {
 			DormBuild dormBuild=new DormBuild();
+			//test
 			dormBuild.setDormBuildId(rs.getInt("dormBuildId"));
 			dormBuild.setDormBuildName(rs.getString("dormBuildName"));
 			dormBuild.setDetail(rs.getString("dormBuildDetail"));
